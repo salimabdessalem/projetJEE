@@ -38,14 +38,7 @@
 
   	<!-- Jquery Validate Script - Validation Fields -->
 		<script type="text/javascript">
-		/*<?php
-$db=new PDO('mysql:host=localhost;dbname=bdtest;charset=utf8','root','');
-$name=$_POST("username");
-$pass=$_POST("password");
-$req=$db->prepare('select password from admin where username=:name');
-$req->execute(array('name'=>$name,));
-for($req fetchAll() as $donnee)
-{ ?>*/
+		
 		$.validator.setDefaults({
 			submitHandler: function() { window.open ('dashboard.html','_self',false) }
 		});
@@ -61,24 +54,24 @@ for($req fetchAll() as $donnee)
 					username: {
 						required: true,
 						minlength: 1,
-                        equalTo: <?php $name ?>
+                        equalTo:
 					},
 					password: {
 						required: true,
 						minlength: 1,
-                        equalTo: <?php $donnee[$name] ?>
+                        equalTo:
 					},
 					
 				messages: {
 					username: {
 						required: "Please enter a username",
 						minlength: "Your username must consist of at least 1 character",
-                        equalTo:"wrong username"
+                       
 					},
 					password: {
 						required: "Please provide a password",
 						minlength: "Your password must be at least 1 character long",
-                        equalTo:"wrong password"
+                        
 					},
 					
 				}
@@ -106,7 +99,7 @@ for($req fetchAll() as $donnee)
         <div class="row">
    		<div class="col-lg-offset-4 col-lg-4" style="margin-top:100px">
    			<div class="block-unit" style="text-align:center; padding:8px 8px 8px 8px;">
-   				<img src="images/logo1v1.png" width="300px" height="150px" alt="" class="img-circle">
+   				<img src="images/logo1.png" width="300px" height="150px" alt="" class="img-circle">
    				<br>
    				<br>
 					<form class="cmxform" id="signupForm" method="get" action="">
