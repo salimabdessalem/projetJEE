@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <jsp:useBean id="pharmasien" scope="request" class="projetJEE.pharmasien"></jsp:useBean>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
   <head>
     <!--=============================================== 
@@ -78,11 +81,11 @@
               <!-- TEXT BASED LOGO -->
               <a class="navbar-brand" href="index.html"><i class="fa fa-heartbeat"></i>WpF <span>Medinova</span></a>              
               <!-- IMG BASED LOGO  -->
-              <!--  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>   -->                    
+              <!--  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>   -->                   
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="pharma.jsp">Home</a></li>
                 <li><a href="features.html">Features</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li class="dropdown">
